@@ -37,30 +37,20 @@
         <input type="text" name="favCar" id="favCar">
         <br>
 
-        <h4>Which fruit do you like the least?</h4>
-        <div>
-            <label for="apple">Apple</label>
-            <input type="radio" name="apple" id="apple">
-        </div>
-        <div>
-            <label for="pear">Pear</label>
-            <input type="radio" name="pear" id="pear">
-        </div>
-        <div>
-            <label for="watermelon">Watermelon</label>
-            <input type="radio" name="watermelon" id="watermelon">
-        </div>
-        <div>
-            <label for="mango">Mango</label>
-            <input type="radio" name="mango" id="mango">
-        </div>
-        <div>
-            <label for="pineapple">Pineapple</label>
-            <input type="radio" name="pineapple" id="pineapple">
-        </div>
+        <button type="submit">submit</button>
     </form>
+
     <?php
+        echo "<h3>Your Answers:</h3>";
+
+        echo "Your favourite colour is: " . $_GET["favColour"];
+        echo "<br>";
         
+        echo "Your favourite hobby is: " . $_GET["favHobby"];
+        echo "<br>";
+
+        echo "Your favourite car is: " . $_GET["favCar"];
+        echo "<br>";
     ?>
 </body>
 
